@@ -182,7 +182,6 @@
     margin-bottom: 15px;
     object-fit: cover;
 }
-
 .service-card h3 {
     font-size: 22px;
     margin-bottom: 10px;
@@ -442,8 +441,6 @@
         transform: scale(1);
     }
 }
-
-
         </style>
         <!-- Latest Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -452,14 +449,14 @@
     <body>
         <div class="header">
             <div class="logo">
-                <img src="logo.jpeg"alt="company logo" class="logo">
+                <img src="assets/logo.jpeg"alt="company logo" class="logo">
         <div class="container-fluid">
                     <nav>
                         <ul>
-                          <li><a href="#Home"><b>Home</b></a></li>
-                          <li><a href="#About-us"><b>About us</b></a></li>
-                          <li><a href="#Services"><b>Services</b></a></li>
-                          <li><a href="#contact-us"><b>Contact us</b></a></li>
+                          <li><a href="#section1"><b>Home</b></a></li>
+                          <li><a href="#section3"><b>About us</b></a></li>
+                          <li><a href="services.html"><b>Services</b></a></li>
+                          <li><a href="#section4"><b>Contact us</b></a></li>
                           <!-- <li><a href="#privacy"><b>privacy</b></a></li> -->
                         </ul>
                       </nav>
@@ -483,20 +480,20 @@
 
 <!--product management services-->
 <div class="service-card product-management"  class="service-card img">
-    <img src="prodt-management.jpg" alt="product management" >
+    <img src="assets/prodt-management.jpg" alt="product management"  style ="height: 300px; width: 300px;" >
 <h3>Product Management</h3>
 <p>We Offer effective product management services including storage, stock management, and inventory control. Our advanced systems ensure that your products are safely stored, monitored and ready for distribution when needed.</p>
 </div>
 
  <!-- Order Processing Service -->
  <div class="service-card order-processing">
-    <img src="order-processing.jpg" alt="Order Processing"  class="service-card img">
+    <img src="assets/order-processing.jpg" alt="Order Processing"  style ="height: 300px; width: 300px;">
     <h3>Order Processing</h3>
     <p>Our fast and effective order processing ensures quick and accurate order fulfillment. From receiving customer orders to picking, packing, and shipping, we handle all aspects of the process efficiently, improving customer satisfaction and reducing delays.</p>
 </div>
         <!-- Transportation Management Service -->
         <div class="service-card transportation-management">
-            <img src="transportation-management.jpg" alt="Transportation Management"  class="service-card img">
+            <img src="assets/transportation-management.jpg" alt="Transportation Management"   style ="height: 300px; width: 300px;">
             <h3>Transportation Management</h3>
             <p>We provide comprehensive transportation management services including route optimization, carrier management, and real-time tracking. Our goal is to ensure your goods reach their destination on time and within budget, while maintaining the highest standards of safety.</p>
         </div>
@@ -519,25 +516,25 @@
                    <div class="core-values">     
                    <!--First Row-->
                    <div class="values-section dark">
-                            <img src="integrity-icon.jpg" alt="Integrity">
+                            <img src="assets/integrity-icon.jpg" alt="Integrity">
                             <h4>Integrity</h4>
                          <p style="color: black;">We have the utmost care, respect, and compassion for our customers around the world. We always work for the benefit of the communities we serve.</p>
                         </div>
 
                         <div class="values-section light">
-                            <img src="Accountability-icon.jpg" alt="Accountability">
+                            <img src="assets/Accountability-icon.jpg" alt="Accountability">
                             <h4>Accountability</h4>
                             <p style="color: black;">We conduct our business fairly, with honesty and transparency. Everything we do stands the test of public scrutiny.</p>
                         </div>
 
                         <div class="values-section light ">
-                             <img src="Efficiency-icon.jpg" alt="Efficiency"> 
+                             <img src="assets/Efficiency-icon.jpg" alt="Efficiency"> 
                             <h4>Efficiency</h4>
                             <p style="color: black;">We constantly strive to achieve the highest possible standard in our daily operations and in the quality of the goods and services we provide.</p>
                         </div>
 
                         <div class="values-section dark ">
-                             <img src="Team-Work-icon.jpg" alt="Team Work"> 
+                             <img src="assets/Team-Work-icon.jpg" alt="Team Work"> 
                             <h4>Team Work</h4>
                             <p style="color: black">We work cohesively with our colleagues across divisions and with our customers and partners around the world, building strong relationships based on tolerance, understanding, and cooperation.</p>
                         </div>
@@ -550,7 +547,7 @@
                 <div class="footer-container">
                     <!--Company Information-->
                     <div class="footer-column">
-                        <img src="logo.jpeg" alt="Company Logo" class="footer-logo">
+                        <img src="assets/logo.jpeg" alt="Company Logo" class="footer-logo">
                         <h3>Company Information</h3>
                         <p>TAKBIR ENTERPRISE LTD is a leading logistics company providing quality products and services, including salt, diesel, petrol, car wheels, and freight transportation.</p>
                     </div>
@@ -570,10 +567,10 @@
  <div class="footer-column">
     <h3>Quick Links</h3>
     <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#About-us">About Us</a></li>
-        <li><a href="#Product&Services">Product & Services</a></li>
-        <li><a href="#contact-us">Contact Us</a></li>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section3">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#section4">Contact Us</a></li>
         <li><a href="#privacy">Privacy Policy</a></li>
     </ul>
 </div>
@@ -588,9 +585,9 @@
 <script>
     //Array of background images
     const images = [
-        "truck_1.jpg",
-        "truck_3.jpg",
-        "truck_4.jpg"
+        "assets/truck_1.jpg",
+        "assets/truck_3.jpg",
+        "assets/truck_4.jpg"
     ];
     let index = 0;
     function changeBackground(){
@@ -611,7 +608,6 @@
                     navLinks[index].classList.add("active");
                 }
             });
-
         let currentSection = 0;
         let isScrolling = false;
 
@@ -649,6 +645,23 @@
 const yearElement = document.getElementById("year");
 const currentYear = new Date().getFullYear();
 yearElement.textContent = currentYear;
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
 
     </script>
                         </body>
